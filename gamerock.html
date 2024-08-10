@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+<body>
+    <h2>Rock, Paper, Scissors Game</h2>
+    <button onclick="playGame()">Play Game</button>
+    <div id="gameResult">
+        <img id="player1Img" src="" alt="Player 1 Choice" style="display:none;">
+        <img id="player2Img" src="" alt="Player 2 Choice" style="display:none;">
+        <p id="result"></p>
+    </div>
+    <h3>Game Results:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Game</th>
+                <th>Winner</th>
+            </tr>
+        </thead>
+        <tbody id="gameHistory">
+        </tbody>
+    </table>
+
+    <script src="gamerock.js"></script>
+</body>
+</html>

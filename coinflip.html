@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+</head>
+<body>
+    <h2>Coin Flip</h2>
+    <button onclick="flipCoin()">Flip Coin</button>
+    <div>
+        <img id="coinImage" src="" alt="Coin Result" style="display:none;">
+    </div>
+    <p id="ratio"></p>
+    <h3>Flip Results:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Flips</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="flipHistory">
+        </tbody>
+    </table>
+
+    <script src="coinflip.js"></script>
+</body>
+</html>

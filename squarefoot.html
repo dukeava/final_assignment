@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Foot Grow Box</title>
+</head>
+<body>
+    <h2>Square Foot Grow Box</h2>
+    <label for="width">Width (ft):</label>
+    <input type="number" id="width" min="1">
+    <br>
+    <label for="height">Height (ft):</label>
+    <input type="number" id="height" min="1">
+    <br>
+    <button onclick="calculateArea()">Calculate</button>
+    <p id="areaResult"></p>
+    <div id="growBox" style="border: 1px solid black;"></div>
+
+    <script src="squarefoot.js"></script>
+</body>
+</html>

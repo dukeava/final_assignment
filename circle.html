@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Generator</title>
+    <style>
+        .circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Circle Generator</h2>
+    <label for="circleCount">Number of Circles (1-100):</label>
+    <input type="number" id="circleCount" min="1" max="100">
+    <br>
+    <button onclick="generateCircles()">Generate</button>
+    <div id="circleContainer"></div>
+
+    <script src="circle.js"></script>
+</body>
+</html>

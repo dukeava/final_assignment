@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Finder</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grade Finder</h2>
+    <label for="pointsInput">Enter your total points (Max 500):</label>
+    <input type="number" id="pointsInput" placeholder="Enter points">
+    <button onclick="findGrade()">Your Grade</button>
+    <p id="gradeResult"></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Range</th>
+            </tr>
+        </thead>
+        <tbody id="gradeTable"></tbody>
+    </table>
+
+    <script src="gardes.js"></script>
+</body>
+</html>

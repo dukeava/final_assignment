@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Slide Show</title>
+    <style>
+        #slideshow img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Advanced Slide Show</h2>
+    <div id="slideshow">
+        <img id="slide" src="image1.jpg" alt="Slideshow Image">
+    </div>
+    <br>
+    <button onclick="previousSlide()">Previous</button>
+    <button onclick="togglePlayPause()" id="playPauseButton">Pause</button>
+    <button onclick="nextSlide()">Next</button>
+    <br><br>
+    <label for="timingSelect">Slide Interval:</label>
+    <select id="timingSelect" onchange="changeInterval()">
+        <option value="1000">1 second</option>
+        <option value="2000">2 seconds</option>
+        <option value="3000" selected>3 seconds</option>
+        <option value="5000">5 seconds</option>
+    </select>
+
+    <script src="slider.js"></script>
+</body>
+</html>
